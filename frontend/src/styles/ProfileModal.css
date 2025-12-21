@@ -1,0 +1,128 @@
+.profile-modal-overlay {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  z-index: 1000;
+  padding: 5% 10%;
+}
+
+.profile-modal-overlay-loading {
+  position: absolute;
+  display: none;
+}
+
+.profile-modal {
+  background: #fff;
+  min-width: 25vw;
+  max-width: 30vw;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: fadeIn 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Modal Header */
+.profile-modal-header {
+  background: #007bff;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-modal-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.profile-modal-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Close Button */
+.close-btn {
+  background: none;
+  padding: 2% 4%;
+  border: none;
+  background-color: #999999;
+  color: white;
+  font-size: 1.45rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  border-radius: 20rem;
+}
+
+.close-btn:hover {
+  color: #ff3f3f;
+  box-shadow: 0 0 0.5rem #cc0000;
+}
+
+/* Modal Content */
+.profile-modal-content {
+  padding: 20px;
+  color: #333;
+  font-size: 1rem;
+  width: 90%;
+}
+
+.profile-modal-content p {
+  margin: 10px 0;
+}
+.profile-modal-content img {
+  width: 50%;
+  height: 50%;
+  border-radius: 100rem;
+  object-fit: contain;
+}
+
+/* Buttons */
+.profile-modal-content button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.profile-modal-content button:first-of-type {
+  background: #007bff;
+  color: white;
+}
+
+.profile-modal-content button:first-of-type:hover {
+  background: #0056b3;
+}
+
+.profile-modal-content button:last-of-type {
+  background: #ff4d4d;
+  color: white;
+}
+
+.profile-modal-content button:last-of-type:hover {
+  background: #cc0000;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

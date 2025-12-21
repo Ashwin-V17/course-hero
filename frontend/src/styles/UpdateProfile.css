@@ -1,0 +1,159 @@
+/* .update-profile {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.update-profile label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.update-profile input,
+.update-profile select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.update-profile button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update-profile button:hover {
+  background: #0056b3;
+} */
+
+.update-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.update-profile h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 2rem;
+  border: 0.2rem double #999999;
+  padding: 1%;
+  text-shadow: 0rem 0rem 0.2rem #0171a1, 0rem 0rem 0.4rem #0171a1;
+}
+
+.update-profile-form {
+  min-width: 50%;
+  /* background-color: aquamarine; */
+  box-shadow: 0rem 0rem 0.5rem #0171a1, 0rem 0rem 1rem #0171a1;
+  background-color: rgba(255, 255, 255, 0.1);
+  min-height: max-content;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+.input-div-update-profile {
+  min-width: 88%;
+  margin: 2.8% 0%;
+  padding: 2% 5% 2% 8%;
+  border-bottom-left-radius: 20rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  /* background-color: #999999; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: start;
+}
+.input-div-update-profile input {
+  min-width: 24vw;
+  max-width: 24dvw;
+  min-height: 6vh;
+  padding: 1% 4%;
+  border-radius: 0.8rem;
+  outline: none;
+  /* background-color: #999999; */
+  box-shadow: 0rem 0rem 0.5rem #018e01, 0rem 0rem 1rem #018e01;
+  border: none;
+  /* font-size: 0.9rem; */
+  transition: 3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-size: 1rem;
+  font-weight: 100;
+  /* background-color: #666666; */
+  color: #000000;
+  letter-spacing: 0.1rem;
+}
+
+.input-div-update-profile.placeholder-active input {
+  /* background-color: #898989; */
+  box-shadow: 0rem 0rem 0.5rem #8e0101, 0rem 0rem 1rem #8e0101;
+  color: #ffffff;
+}
+.input-div-update-profile input[type="date"]:not(:valid) {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.update-profile-form a {
+  margin: 1.2rem;
+  font-size: 1.1rem;
+  /* color: #fc0000; */
+  color: #fff;
+  display: block;
+  /* background-color: #fff; */
+  text-shadow: 0 0 0.1rem #000, 0 0 0.2rem #000;
+  text-decoration: none;
+  transition: 0.5s all ease;
+  background-color: #666;
+  width: 40%;
+  padding: 1.4%;
+  border-radius: 0.5rem;
+}
+.update-profile-form a:hover {
+  color: #d70202;
+  text-shadow: none;
+  box-shadow: 0 0 0.4rem #fc0000, 0 0 0.8rem #fc0000;
+}
+
+.update-profile button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+.update-profile button:hover {
+  background: #0056b3;
+  box-shadow: 0 0 0.4rem #007bff, 0 0 0.8rem #007bff;
+}
+
+/* .input-div-update-profile input[type="text"]:not(:placeholder-shown),
+.input-div-update-profile input[type="email"]:not(:placeholder-shown),
+.input-div-update-profile input[type="number"]:not(:placeholder-shown),
+.input-div-update-profile input[type="password"]:not(:placeholder-shown) {
+  font-size: 1rem;
+  font-weight: 100;
+  background-color: #666666;
+  color: #fff;
+  letter-spacing: 0.1rem;
+} */

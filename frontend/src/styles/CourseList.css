@@ -1,0 +1,126 @@
+#courselist-main-container {
+  min-width: 80vw;
+  min-height: max-content;
+  display: flex;
+  /* background-color: #262626; */
+  align-items: center;
+  justify-content: center;
+}
+
+#course-list-div {
+  min-width: 60vw;
+  max-width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  border: 0.5px solid #008cff;
+  box-shadow: 0 0 3rem #008cff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#course-list-div h1 {
+  font-variant: small-caps;
+  text-decoration: underline;
+}
+
+#course-list-div ul {
+  /* background-color: aquamarine; */
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  /* min-width: 60vw; */
+}
+
+#course-list-div ul .course-li {
+  border: 1px solid #262626;
+  margin: 1rem 0;
+  padding: 3%;
+  min-width: 48vw;
+  max-width: 50vw;
+  text-align: start;
+  transition: 0.6s all ease;
+  background-color: #c4c4c4;
+  border-radius: 1rem;
+}
+
+#course-list-div ul li:hover {
+  box-shadow: 0 0 1rem #000000;
+}
+
+#course-list-div ul li #create-chapter-link {
+  text-decoration: none;
+  color: #262626;
+  /* background-color: aqua; */
+  margin: 5% 2% 3% 2%;
+  display: block;
+}
+
+#course-list-div ul li #create-chapter-link p {
+  display: inline;
+
+  padding: 1%;
+  font-size: 1rem;
+  color: #1a1a1a;
+  border: 1px solid #262626;
+  border-radius: 2rem;
+  transition: 0.6s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+#course-list-div ul li #create-chapter-link i {
+  /* margin: 0 1%; */
+  transition: 0.6s all ease;
+  color: #1a1a1a;
+}
+#course-list-div ul li #create-chapter-link p:hover {
+  box-shadow: 0 0 1rem #008cff;
+}
+
+#course-list-div ul li #create-chapter-link i:hover {
+  text-shadow: 0 0 1rem #008cff;
+  color: #e6e6e6;
+}
+.chapters-list h3 {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.chapters-list ol {
+  /* list-style-type: none; */
+  padding-left: 15px;
+  /* padding: 0% 10/%; */
+  text-decoration: none;
+  /* border-radius: 1rem; */
+  /* border: 1px solid #262626; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+}
+
+.chapters-list ol li {
+  background-color: #ff0000;
+  min-width: 40vw;
+  max-width: 42vw;
+  height: 3vh;
+  border: 1px solid #262626;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 1%;
+  text-align: start;
+  transition: 0.6s all ease;
+  background-color: #c4c4c4;
+}
+.chapters-list ol .chapterLink {
+  margin-bottom: 5px;
+  /* background-color: #37ff00; */
+  color: #171717;
+  text-decoration: none;
+  min-width: inherit;
+  display: block;
+}

@@ -1,0 +1,131 @@
+.form-main-container {
+  min-width: 80vw;
+  max-width: 90vw;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  /* background-color: s; */
+  justify-content: center;
+}
+
+#login-form {
+  background-color: rgba(255, 255, 255, 0.2);
+  min-width: 24vw;
+  max-width: 28vw;
+  min-height: 32vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5%;
+  border-radius: 0.8rem;
+}
+
+#login-form .input-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #666;
+}
+
+#login-form .input-div i {
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  z-index: 1;
+  color: #2196f3;
+}
+#login-form .input-div i:hover {
+  cursor: pointer;
+}
+#login-form input {
+  min-width: 24vw;
+  max-width: 24dvw;
+  min-height: 6vh;
+  padding: 1% 4%;
+  border-radius: 0.8rem;
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+  transition: 3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#login-form input:not(:placeholder-shown) {
+  font-size: 1rem;
+  font-weight: 100;
+  background-color: #292929;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+
+.login-submit-button {
+  padding: 3% 8%;
+  font: 1em sans-serif;
+  background-color: aqua;
+  border: none;
+  border-radius: 1rem;
+  transition: 0.8s all ease;
+}
+.login-submit-button:hover {
+  cursor: pointer;
+  background-color: #292929;
+  color: antiquewhite;
+  box-shadow: 0 0 1rem #004ead;
+}
+
+.login-switch {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.6s all ease;
+  /* padding: 1%; */
+}
+
+.login-switch:hover {
+  color: #004ead;
+  text-shadow: 0 0 0.5rem #ccc;
+  text-decoration: underline;
+}
+
+/* The main container for the toggle button */
+.toggle-button {
+  position: relative;
+  width: 24vw;
+  height: 30px;
+  background-color: #00ff62;
+  border-radius: 30px;
+  cursor: pointer;
+  /* padding: 1%; */
+  transition: background-color 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* The knob inside the toggle */
+.toggle-knob {
+  position: absolute;
+  width: 12vw;
+  height: 26px;
+  background-color: #666;
+  border-radius: 30px;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.4s;
+}
+
+/* Active (on) state for the toggle button */
+.toggle-button.active {
+  background-color: #2196f3;
+}
+
+/* Move the knob to the right when active */
+.toggle-button.active .toggle-knob {
+  transform: translateX(11.78vw);
+}
+
+.role {
+  position: relative;
+  z-index: 3;
+}

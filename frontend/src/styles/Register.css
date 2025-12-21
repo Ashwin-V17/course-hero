@@ -1,0 +1,301 @@
+.register-form {
+  background-color: rgba(255, 255, 255, 0.2);
+  min-width: 24vw;
+  max-width: 28vw;
+  min-height: 32vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5%;
+  border-radius: 0.8rem;
+}
+.register-form .input-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #666;
+}
+
+.register-form .password-div i {
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  z-index: 1;
+  color: #2196f3;
+}
+.register-form .input-div i:hover {
+  cursor: pointer;
+}
+
+.register-form input:not([type="radio"]) {
+  min-width: 24vw;
+  min-height: 6vh;
+  padding: 1% 4%;
+  border-radius: 0.8rem;
+  outline: none;
+  border: none;
+  font-size: 0.98rem;
+  transition: 3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.register-form input[type="date"]:not(:valid) {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.register-form input[type="text"]:not(:placeholder-shown),
+.register-form input[type="number"]:not(:placeholder-shown),
+.register-form input[type="password"]:not(:placeholder-shown) {
+  font-size: 1rem;
+  font-weight: 100;
+  background-color: #292929;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+
+.register-submit-button {
+  padding: 3% 8%;
+  font: 1em sans-serif;
+  background-color: aqua;
+  border: none;
+  border-radius: 1rem;
+  transition: 0.8s all ease;
+}
+.register-submit-button:hover {
+  cursor: pointer;
+  background-color: #292929;
+  color: antiquewhite;
+  box-shadow: 0 0 1rem #004ead;
+}
+.gender input {
+  font-size: 2rem;
+  visibility: hidden;
+  font-size: 1px;
+}
+
+.gender {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1% 2%;
+  border: 1px solid #464646;
+  min-width: 4vw;
+  padding: 2%;
+  border-radius: 0.5rem;
+  position: relative;
+  transition: transform 3s;
+  overflow: hidden;
+}
+
+.gender:hover {
+  cursor: pointer;
+}
+
+.gender-div {
+  background-color: rgba(255, 255, 255, 0.1);
+  min-width: 30vw;
+  min-height: 14vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2% 1%;
+  border-radius: 0.5rem;
+  border: 1px solid #404040;
+  /* position: relative; */
+}
+
+.gender-div span {
+  color: #464646;
+}
+
+.gender-div i {
+  font-size: 2.4rem;
+}
+.gender.selected {
+  /* position: relative; */
+  color: #fff;
+  border: 1px solid #000;
+  transition: color 1s ease, border 1s ease;
+  text-shadow: 0 0 0.5rem #000;
+  box-shadow: 0 0 0.5rem #000;
+  position: relative;
+}
+
+.gender.selected::before {
+  /* Initial position */
+  transform: translateY(100%);
+  content: "";
+  position: absolute;
+  /* bottom: -100%; */
+  bottom: 0;
+  left: 0;
+  border-radius: 0.5rem;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  /* background: red; Temporary debugging color */
+  z-index: -1;
+  transition: all 4s ease;
+  /* -webkit-transform: translateY(100%); 
+  -ms-transform: translateY(100%); */
+}
+
+/* .gender.selected.male::before {
+  background: #2286ff; 
+}
+
+.gender.selected.female::before {
+  background: #ff21aa;
+}
+
+.gender.selected.others::before {
+  background: linear-gradient(
+    270deg,
+    hsla(0, 100%, 50%, 1) 8%,
+    hsla(39, 100%, 50%, 1) 28%,
+    hsla(60, 100%, 50%, 1) 42%,
+    hsla(120, 100%, 25%, 1) 56%,
+    hsla(240, 100%, 50%, 1) 70%,
+    hsla(275, 100%, 25%, 1) 85%,
+    hsla(274, 100%, 50%, 1) 100%
+  );
+}
+
+.gender.selected.animate::before {
+  transform: translateY(0);
+    transition: transform 2s ease 0.5s;
+  border: 2px solid blue;
+
+} */
+
+.gender.selected.male::before {
+  animation: fillBackground 2s ease 0.5s forwards;
+  background: #2286ff;
+}
+
+.gender.selected.female::before {
+  animation: fillBackground 2s ease 0.5s forwards;
+  background: #ff21aa;
+}
+
+.gender.selected.others::before {
+  animation: fillBackground 2s ease 0.5s forwards;
+  background: linear-gradient(
+    270deg,
+    hsla(0, 100%, 50%, 1) 8%,
+    hsla(39, 100%, 50%, 1) 28%,
+    hsla(60, 100%, 50%, 1) 42%,
+    hsla(120, 100%, 25%, 1) 56%,
+    hsla(240, 100%, 50%, 1) 70%,
+    hsla(275, 100%, 25%, 1) 85%,
+    hsla(274, 100%, 50%, 1) 100%
+  );
+}
+
+@keyframes fillBackground {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* .gender.selected::before {
+  transform: translateY(100%); Start from below
+  border: 2px solid green;
+} */
+
+/* ! */
+/* .gender.selected.others::before {
+  background: hsla(0, 100%, 50%, 1);
+
+  background: linear-gradient(
+    270deg,
+    hsla(0, 100%, 50%, 1) 8%,
+    hsla(39, 100%, 50%, 1) 28%,
+    hsla(60, 100%, 50%, 1) 42%,
+    hsla(120, 100%, 25%, 1) 56%,
+    hsla(240, 100%, 50%, 1) 70%,
+    hsla(275, 100%, 25%, 1) 85%,
+    hsla(274, 100%, 50%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    270deg,
+    hsla(0, 100%, 50%, 1) 8%,
+    hsla(39, 100%, 50%, 1) 28%,
+    hsla(60, 100%, 50%, 1) 42%,
+    hsla(120, 100%, 25%, 1) 56%,
+    hsla(240, 100%, 50%, 1) 70%,
+    hsla(275, 100%, 25%, 1) 85%,
+    hsla(274, 100%, 50%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    270deg,
+    hsla(0, 100%, 50%, 1) 8%,
+    hsla(39, 100%, 50%, 1) 28%,
+    hsla(60, 100%, 50%, 1) 42%,
+    hsla(120, 100%, 25%, 1) 56%,
+    hsla(240, 100%, 50%, 1) 70%,
+    hsla(275, 100%, 25%, 1) 85%,
+    hsla(274, 100%, 50%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF0000", endColorstr="#FFA500", GradientType=1 );
+} */
+
+/* .gender.selected.animate::before {
+  transform: translateY(-100%);
+} */
+/* 
+.gender.others {
+  background: hsla(0, 100%, 50%, 1);
+
+  background: linear-gradient(
+    270deg,
+    hsla(0, 100%, 50%, 1) 8%,
+    hsla(39, 100%, 50%, 1) 28%,
+    hsla(60, 100%, 50%, 1) 42%,
+    hsla(120, 100%, 25%, 1) 56%,
+    hsla(240, 100%, 50%, 1) 70%,
+    hsla(275, 100%, 25%, 1) 85%,
+    hsla(274, 100%, 50%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    270deg,
+    hsla(0, 100%, 50%, 1) 8%,
+    hsla(39, 100%, 50%, 1) 28%,
+    hsla(60, 100%, 50%, 1) 42%,
+    hsla(120, 100%, 25%, 1) 56%,
+    hsla(240, 100%, 50%, 1) 70%,
+    hsla(275, 100%, 25%, 1) 85%,
+    hsla(274, 100%, 50%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    270deg,
+    hsla(0, 100%, 50%, 1) 8%,
+    hsla(39, 100%, 50%, 1) 28%,
+    hsla(60, 100%, 50%, 1) 42%,
+    hsla(120, 100%, 25%, 1) 56%,
+    hsla(240, 100%, 50%, 1) 70%,
+    hsla(275, 100%, 25%, 1) 85%,
+    hsla(274, 100%, 50%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF0000", endColorstr="#FFA500", GradientType=1 );
+} */
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+}

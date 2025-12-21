@@ -1,0 +1,73 @@
+#create-course-main-container {
+  min-width: 80vw;
+  max-height: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.create-course-container {
+  min-width: 55vw;
+  max-width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  border: 0.5px solid #008cff;
+  box-shadow: 0 0 3rem #008cff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.create-course-container form {
+  min-width: 60vw;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5%;
+  border-radius: 0.8rem;
+}
+
+.create-course-container form input {
+  min-width: 36vw;
+  min-height: 6vh;
+  padding: 1% 2%;
+  border-radius: 0.8rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  transition: 3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  letter-spacing: 0.1rem;
+}
+.create-course-container form input[type="number"]::-webkit-inner-spin-button,
+.create-course-container form input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  background-color: #6f6f6f;
+  -webkit-appearance: none;
+  margin: 0;
+}
+.create-course-container form input[type="number"] {
+  appearance: textfield;
+}
+
+.create-course-container button {
+  padding: 2% 6%;
+  font: 1em sans-serif;
+  background-color: #6f6f6f;
+  border: none;
+  border-radius: 1rem;
+  transition: 1s all ease;
+  color: #f0ffff;
+}
+
+.create-course-container button:hover {
+  background-color: #363636;
+  cursor: pointer;
+  color: #a4d4ff;
+  box-shadow: 0 0 2rem #008cff;
+}

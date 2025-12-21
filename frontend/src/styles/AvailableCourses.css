@@ -1,0 +1,67 @@
+.available-courses-container {
+  padding: 2rem;
+  max-width: 74vw;
+  border-radius: 1rem;
+  margin: 4% 1%;
+  background-color: rgba(63, 63, 63, 0.259);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.courses-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.course-card {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.4s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.course-card p {
+  margin: 2% 0;
+  line-height: 1.4;
+}
+.fa-book-open-reader {
+  font-size: 1.6rem;
+  text-shadow: 0 0 0.2rem #007bff, 0 0 0.3rem #007bff;
+  margin: 2% 1% 4% 1%;
+}
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 1rem #007bff, 0 0 1.4rem #007bff;
+  background-color: #ffffff;
+  border: 2px solid #15ff00;
+}
+
+.available-courses-container h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.error-message {
+  color: red;
+}
+
+.available-courses-container button {
+  margin-top: 1rem;
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.6s all ease;
+}
+
+.available-courses-container button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 1rem #15ff00, 0 0 1.2rem #15ff00;
+}

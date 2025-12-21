@@ -1,0 +1,95 @@
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-section {
+  background-color: #fbe2fa;
+  padding: 50px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cta-buttons .btn-primary,
+.btn-secondary {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-secondary {
+  background-color: #28a745;
+}
+
+.features-section {
+  padding: 50px;
+  background-color: #c9e7ff;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 200px;
+  margin: 20px;
+}
+
+.feature i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.categories-section {
+  padding: 50px;
+  background-color: #f5f5f5;
+}
+
+.categories-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.category {
+  width: 250px;
+  margin: 20px;
+}
+
+.category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.category .btn-link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.home-footer {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}

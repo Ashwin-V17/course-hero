@@ -1,0 +1,37 @@
+.course-details-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2%;
+  color: #ffffff;
+  box-shadow: 0 0 1rem #000, 0 0 1.4rem #000;
+  border-radius: 1rem;
+}
+
+.course-details-container h1 {
+  font-size: 2.4rem;
+  text-shadow: 0 0 0.4rem #229fff, 0 0 0.6rem #000;
+}
+
+.course-details-container p {
+  font-size: 1.4rem;
+  text-shadow: 0 0 0.2rem #000, 0 0 0.3rem #229fff;
+}
+.course-details-container button {
+  padding: 1%;
+  font-size: 1.2rem;
+  min-width: 14vw;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: 0.6s all ease;
+  border: 1px solid transparent;
+}
+.course-details-container button:hover {
+  background-color: #000;
+  box-shadow: 0 0 0.4rem #229fff, 0 0 0.6rem #008cff;
+  text-shadow: 0 0 0.4rem #008cff, 0 0 0.6rem #008cff;
+  color: #ffffff;
+  border: 1px solid #008cff;
+}
+.course-details-container button i {
+  margin-left: 1%;
+}
